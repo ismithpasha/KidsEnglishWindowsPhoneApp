@@ -1,0 +1,209 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="DrawingApp.AlphabetPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+   
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid x:Name="LayoutRoot" Background="#FF0D2C70" Margin="0">
+
+            
+            <ScrollViewer>
+            <Grid Margin="0,100,0,0" Height="900">
+                
+                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Alphabet :" VerticalAlignment="Top" Foreground="#FFFFFEDF" FontWeight="Bold" FontSize="53.333" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+
+               <Grid Margin="0,100,0,0">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Aa.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/a.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="0" Grid.Column="1" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Bb.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/b.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="0" Grid.Column="2" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Cc.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/c.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="0" Grid.Column="3" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Dd.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/d.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="1" Grid.Column="0" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Ee.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/e.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="1" Grid.Column="1" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Ff.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/f.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="1" Grid.Column="2" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Gg.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/g.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="1" Grid.Column="3" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Hh.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/h.png"/>
+                    </Button.Background>
+                </Button>
+
+
+                <Button Grid.Row="2" Grid.Column="0" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Ii.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/i.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="2" Grid.Column="1" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Jj.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/j.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="2" Grid.Column="2" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Kk.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/k.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="2" Grid.Column="3" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Ll.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/l.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="3" Grid.Column="0" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Mm.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/m.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="3" Grid.Column="1" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Nn.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/n.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="3" Grid.Column="2" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Oo.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/o.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="3" Grid.Column="3" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Pp.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/p.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="4" Grid.Column="0" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Qq.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/q.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="4" Grid.Column="1" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Rr.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/r.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="4" Grid.Column="2" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Ss.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/s.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="4" Grid.Column="3" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Tt.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/t.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="5" Grid.Column="0" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Uu.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/u.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="5" Grid.Column="1" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Vv.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/v.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="5" Grid.Column="2" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Ww.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/w.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="5" Grid.Column="3" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Xx.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/x.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="6" Grid.Column="1" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Yy.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/y.png"/>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="6" Grid.Column="2" Click="Button_Click" Tag="\Assets\AlphabetImages\Alphabets\Zz.jpg" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/AlphabetImages/icons/z.png"/>
+                    </Button.Background>
+                </Button>
+
+            </Grid>
+            </Grid>
+        </ScrollViewer>
+    
+          
+        </Grid>
+    
+</phone:PhoneApplicationPage>

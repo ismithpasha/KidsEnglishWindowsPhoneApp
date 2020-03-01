@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{233282ED-21B8-465E-8F6B-A44D472C7363}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DrawingApp</RootNamespace>
+    <AssemblyName>DrawingApp</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>DrawingApp_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>DrawingApp.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="UI\AlphabetPage.xaml.cs">
+      <DependentUpon>AlphabetPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ArtPage.xaml.cs">
+      <DependentUpon>ArtPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewImage.xaml.cs">
+      <DependentUpon>ViewImage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="UI\AlphabetPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ArtPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ViewImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="abc1.png" />
+    <Content Include="abc2.png" />
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Aa.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Bb.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Cc.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Dd.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Ee.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Ff.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Gg.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Hh.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Ii.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Jj.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Kk.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Ll.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Mm.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Nn.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Oo.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Pp.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Qq.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Rr.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Ss.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Tt.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Uu.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Vv.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Ww.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Xx.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Yy.jpg" />
+    <Content Include="Assets\AlphabetImages\Alphabets\Zz.jpg" />
+    <Content Include="Assets\AlphabetImages\icons\a.png" />
+    <Content Include="Assets\AlphabetImages\icons\b.png" />
+    <Content Include="Assets\AlphabetImages\icons\c.png" />
+    <Content Include="Assets\AlphabetImages\icons\d.png" />
+    <Content Include="Assets\AlphabetImages\icons\e.png" />
+    <Content Include="Assets\AlphabetImages\icons\f.png" />
+    <Content Include="Assets\AlphabetImages\icons\g.png" />
+    <Content Include="Assets\AlphabetImages\icons\h.png" />
+    <Content Include="Assets\AlphabetImages\icons\i.png" />
+    <Content Include="Assets\AlphabetImages\icons\j.png" />
+    <Content Include="Assets\AlphabetImages\icons\k.png" />
+    <Content Include="Assets\AlphabetImages\icons\l.png" />
+    <Content Include="Assets\AlphabetImages\icons\m.png" />
+    <Content Include="Assets\AlphabetImages\icons\n.png" />
+    <Content Include="Assets\AlphabetImages\icons\o.png" />
+    <Content Include="Assets\AlphabetImages\icons\p.png" />
+    <Content Include="Assets\AlphabetImages\icons\q.png" />
+    <Content Include="Assets\AlphabetImages\icons\r.png" />
+    <Content Include="Assets\AlphabetImages\icons\s.png" />
+    <Content Include="Assets\AlphabetImages\icons\t.png" />
+    <Content Include="Assets\AlphabetImages\icons\u.png" />
+    <Content Include="Assets\AlphabetImages\icons\v.png" />
+    <Content Include="Assets\AlphabetImages\icons\w.png" />
+    <Content Include="Assets\AlphabetImages\icons\x.png" />
+    <Content Include="Assets\AlphabetImages\icons\y.png" />
+    <Content Include="Assets\AlphabetImages\icons\z.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\CanvasImages\abc.png" />
+    <Content Include="Assets\CanvasImages\erase-128.png" />
+    <Content Include="Assets\CanvasImages\eraser.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Alphabet\A.wav" />
+    <Content Include="Audio\Alphabet\B.wav" />
+    <Content Include="Audio\Alphabet\C.wav" />
+    <Content Include="Audio\Alphabet\D.wav" />
+    <Content Include="Audio\Alphabet\E.wav" />
+    <Content Include="Audio\Alphabet\F.wav" />
+    <Content Include="Audio\Alphabet\G.wav" />
+    <Content Include="Audio\Alphabet\H.wav" />
+    <Content Include="Audio\Alphabet\I.wav" />
+    <Content Include="Audio\Alphabet\J.wav" />
+    <Content Include="Audio\Alphabet\K.wav" />
+    <Content Include="Audio\Alphabet\L.wav" />
+    <Content Include="Audio\Alphabet\M.wav" />
+    <Content Include="Audio\Alphabet\N.wav" />
+    <Content Include="Audio\Alphabet\O.wav" />
+    <Content Include="Audio\Alphabet\P.wav" />
+    <Content Include="Audio\Alphabet\Q.wav" />
+    <Content Include="Audio\Alphabet\R.wav" />
+    <Content Include="Audio\Alphabet\S.wav" />
+    <Content Include="Audio\Alphabet\T.wav" />
+    <Content Include="Audio\Alphabet\U.wav" />
+    <Content Include="Audio\Alphabet\V.wav" />
+    <Content Include="Audio\Alphabet\W.wav" />
+    <Content Include="Audio\Alphabet\X.wav" />
+    <Content Include="Audio\Alphabet\Y.wav" />
+    <Content Include="Audio\Alphabet\Z.wav" />
+    <Content Include="mip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
